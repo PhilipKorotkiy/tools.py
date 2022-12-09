@@ -4,6 +4,7 @@ import math
 
 # Use Classes for diffrent solutions,
 # Like for example, Randomtools for random stuff.
+# We would be doing many updates, So you may need to make a new file with your functions
 class Randomtools:
     def randfromlist(listhere):
         return listhere[random.randint(0,len(listhere)-1)]  
