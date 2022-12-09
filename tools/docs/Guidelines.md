@@ -1,8 +1,8 @@
 # <span style="color:Khaki">Guidelines</span>
 
 ## Table of contents
-- [Documentation](docs/documentation.md)<br />
-- [Contribution guidelines for this project](docs/Guidelines.md)<br />
+- [Documentation](documentation.md)<br />
+- You are on the guidelines<br />
 
 ## ❗❗❗ Read this before adding stuff ❗❗❗ 
 
