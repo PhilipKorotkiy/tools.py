@@ -25,3 +25,5 @@
 🟣 `Intinput(Prompt,Promptforint)` - Input but only works if you input an integer
 
 🟣 `MassCompare(list,Value,Function)`  - Compares a list and a value, Returns an array of the compared value and if it was able to compare it. Example <span style="color:Tomato">[</span><span style="color:CornflowerBlue">Value</span><span style="color:Tomato">,</span><span style="color:CornflowerBlue">True</span><span style="color:Tomato">]</span>
+
+## [`Return Mainpage`](/README.md)
