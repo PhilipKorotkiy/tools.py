@@ -1,47 +1,23 @@
-# tools.py
+# <span style="color:Khaki">Tools.py</span>
 Tools! This is a python library, Expand it in any way you like.
 
-We make some parts of your code easy.
+> We make some parts of your code easy.
 
-If you want to commit to this directory than read the bottom.
+## Table of contents
+- [Documentation](docs/documentation.md)<br />
+- [Contribution guidelines for this project](docs/Guidelines.md)<br />
 
 # 1. Importing
-Make sure to put tools.py into your project dictionary,
-Then use:
-Import tools
+> Make sure to put tools.py into your project directory.<br />
 
-# 2. How to use:
+Then use: <br />
+`Import tools`
 
-
-🔵 randfromlist(list) Takes a random thing from a list 
-
-🔵 randfromcharstr(string) Takes a random charecter form a string!
-
-🔴Math 
-
-🔴tobin(Number) - Turns into binary
-
-🔴frombin(Number) - Truns from binary 
-
-🔴avg(list): - Returns a avg from a list 
-
-🔴percent(first,second) - Returns a list of both values into percents '[50,50]'
-
-🟣 Input
-
-🟣 Intinput(Prompt,Promptforint) - Input but only works if you input an integer
-
-🟣 MassCompare(lis,Value,Function)
-
-# ❗❗❗ Read this before adding stuff ❗❗❗ 
-
-Remember, We are not allowed to use external librarys. 
-Make sure what you are adding makes sense.
-
-🔵 Random tools - Simple random algorithms
-
-🔴 Math - Math algorithms, Expand in any way you like. 2,1⭕ Geometry - Geometric algorithms
-
-🟣 Input - Tools to manage input.
-
-📌 Proposed Window function - Someone told me to make windows, We have not decided yet.
+Example to use modules: <br />
+`Math.avg([1,2,3])`
+# 2. Documentation
+The documentation is work in progress <br />
+but we have an md file. [Documentation](docs/documentation.md)
+# 3. Contribute <span style="color:Tomato">♥</span>
+If you want to commit to this directory than read the Guidelines.
+[Contribution guidelines for this project](docs/Guidelines.md)
