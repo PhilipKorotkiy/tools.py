@@ -17,7 +17,7 @@ Example to use modules: <br />
 `Math.avg([1,2,3])`
 # 2. Documentation
 The documentation is work in progress <br />
-but we have an md file. [Documentation](docs/documentation.md)
+but we have an md file. [Documentation](tools/docs/documentation.md)
 # 3. Contribute <span style="color:Tomato">♥</span>
 If you want to commit to this directory than read the Guidelines.
-[Contribution guidelines for this project](docs/Guidelines.md)
+[Contribution guidelines for this project](tools/docs/Guidelines.md)
