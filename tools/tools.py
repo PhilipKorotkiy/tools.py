@@ -72,6 +72,7 @@ class StrOp:
             result = x + result
         return result
     def getwords(string):
+        # This is bugged so i made a placeholder to resolve this.
         string = string + ' Placeholder'
         yippie = ''
         result = []
