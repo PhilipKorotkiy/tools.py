@@ -65,6 +65,22 @@ class Inp:
                 Function
                 return [x,True]
         return [x,False]
-
+class StrOp:
+    def reverse(string):
+        result = ''
+        for x in string:
+            result = x + result
+        return result
+    def getwords(string):
+        string = string + ' Placeholder'
+        yippie = ''
+        result = []
+        for x in string:
+            if(x == ' '):
+                result.append(yippie)
+                yippie = ''
+            else:
+                yippie = yippie + x
+        return result
 
 
