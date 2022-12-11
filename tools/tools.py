@@ -136,3 +136,4 @@ class StrOp:
                 y = x
             result = result + y
         return result
+
