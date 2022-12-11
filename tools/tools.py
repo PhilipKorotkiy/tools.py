@@ -82,7 +82,8 @@ class StrOp:
         result = []
         for x in string:
             if(x == Separator):
-                result.append(yippie)
+                if yippie != '':
+                    result.append(yippie)
                 yippie = ''
             else:
                 yippie = yippie + x
