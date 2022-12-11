@@ -71,18 +71,38 @@ class StrOp:
         for x in string:
             result = x + result
         return result
-    def getwords(string):
+    def getwords(string,Separator):
         # This is bugged so i made a placeholder to resolve this.
         string = string + ' Placeholder'
         yippie = ''
         result = []
+        for x in string:
+            if(x == Separator):
+                result.append(yippie)
+                yippie = ''
+            else:
+                yippie = yippie + x
+        return result
+    def reversewords(string):
+        # This is bugged so i made a placeholder to resolve this.
+        string = string + ' Placeholder'
+        yippie = ''
+        ending = ''
+        result = []
+        i = 0
         for x in string:
             if(x == ' '):
                 result.append(yippie)
                 yippie = ''
             else:
                 yippie = yippie + x
-        return result
-
+        result.reverse()
+        for x in result:
+            if i == 0:
+                ending = x
+            else:
+                ending = ending + ' ' +x
+            i += 1
+        return ending
 
             
