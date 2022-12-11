@@ -85,7 +85,7 @@ class StrOp:
                 if yippie != '':
                     result.append(yippie)
                 yippie = ''
-            else:
+            elif(x != '.' and x != '?' and x != '!'):
                 yippie = yippie + x
         return result
     def reversewords(string):
