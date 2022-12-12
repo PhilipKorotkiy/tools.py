@@ -65,6 +65,75 @@ class Inp:
                 Function
                 return [x,True]
         return [x,False]
-
-
+class StrOp:
+    def letterindex(letter):
+        return ord(letter.lower()) - 97
+    def indextoletter(pos):
+        return chr(pos + 97)
+    def reverse(string):
+        result = ''
+        for x in string:
+            result = x + result
+        return result
+    def getwords(string,Separator):
+        # This is bugged so i made a placeholder to resolve this.
+        string = string + ' Placeholder'
+        yippie = ''
+        result = []
+        for x in string:
+            if(x == Separator):
+                if yippie != '':
+                    result.append(yippie)
+                yippie = ''
+            elif(x != '.' and x != '?' and x != '!'and x != ',' and x != '"' and x != "'" ):
+                yippie = yippie + x
+        return result
+    def reversewords(string):
+        # This is bugged so i made a placeholder to resolve this.
+        string = string + ' Placeholder'
+        yippie = ''
+        ending = ''
+        result = []
+        i = 0
+        for x in string:
+            if(x == ' '):
+                result.append(yippie)
+                yippie = ''
+            else:
+                yippie = yippie + x
+        result.reverse()
+        for x in result:
+            if i == 0:
+                ending = x
+            else:
+                ending = ending + ' ' +x
+            i += 1
+        return ending
+    def ShiftEncode(string,shift):
+        final = ''
+        string = string.lower()
+        for x in string:
+            if (x != ' ' and x != '.' and x != ',' and x != '/'):
+                z = StrOp.letterindex(x) + shift
+                if(z >= 25): 
+                    y = StrOp.indextoletter(z - 25)
+                else:
+                    y = StrOp.indextoletter(z)
+            else:
+                y = x
+            final = final + y
+        return final
+    def ShiftDecode(code,shift):
+        result = ''
+        for x in code:
+            if x != ' ' and x != ',' and x != '.' and x != '/':
+                z = StrOp.letterindex(x) - shift
+                if z <= -1:
+                    y = StrOp.indextoletter(z + 25)
+                else:
+                    y = StrOp.indextoletter(z)
+            else:
+                y = x
+            result = result + y
+        return result
 
