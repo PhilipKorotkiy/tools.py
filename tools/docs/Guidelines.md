@@ -21,4 +21,4 @@ Make sure what you are adding makes sense. After contributeing make sure to modi
 📌 Proposed Window function - Someone told me to make windows, We have not decided yet..<br/>
 📌Colors: `#F0E68C` or `color:Khaki`
 
-## [`Return Mainpage`](/README.md)
+## [<span style="color:HotPink">Return</span><span style="color:Khaki"> MainPage</span>](/README.md)
