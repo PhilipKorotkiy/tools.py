@@ -1,0 +1,28 @@
+.blue {
+    color: aliceblue;
+    font-family: sans-serif;
+    border-left: 4px solid #7860ff;
+    padding-left: 6px;
+    border-radius: 2px;
+}
+.red {
+    color: aliceblue;
+    font-family: sans-serif;
+    border-left: 4px solid rgb(255, 111, 111);
+    padding-left: 6px;
+    border-radius: 2px;
+}
+.purple {
+    color: aliceblue;
+    font-family: sans-serif;
+    border-left: 4px solid rgb(214, 52, 255);
+    padding-left: 6px;
+    border-radius: 2px;
+}
+.green {
+    color: aliceblue;
+    font-family: sans-serif;
+    border-left: 4px solid rgb(74, 255, 38);
+    padding-left: 6px;
+    border-radius: 2px;
+}
