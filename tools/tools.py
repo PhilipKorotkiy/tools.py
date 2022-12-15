@@ -52,6 +52,8 @@ class Math:
             return round(1/2*B*H)
         def Square(X,Y):
             return X*Y
+        def Trapiziod(top,bottom,height):
+            return 1/2*(top+bottom)*height
 class Inp:
     def Intinput(prompt,Failprompt):
         try:
