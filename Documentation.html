@@ -7,50 +7,69 @@
         <script src="js/main.js"></script>
         <link rel="stylesheet" href="css/styles.css"/>
         <link rel="stylesheet" href="css/colorquotes.css"/>
+        <link rel="stylesheet" href="css/collapseable.css"/>
     </head>
 
-    <body>
-        <h1>
-            <span class="headertools" id="title" onmouseenter="buttonanim('title',0.7)" onmouseleave="buttonanim('title',1)" onclick="window.location ='index.html'">Tools.py</span>
-            <button class="onpage" id="hidebutton">Documentation</button>
-            <button class="buttondocs" id="guideb" onmouseenter="buttonanim('guideb',0.5)" onmouseleave="buttonanim('guideb',1)" onclick="window.location='guidelines.html'">Guidelines</button>
-            <button class="buttondocs" id="gitbutton" onmouseenter="buttonanim('gitbutton',0.5)" onmouseleave="buttonanim('gitbutton',1)" onclick="window.location='https://github.com/BluCatNight/tools.py'">Github</button>
-        </h1>
-        
-        <p class="pr1">Hello! Welcome to the offical Documentation for Tools.py.</p>
-        <p class="pr1">Here we have the offical guide.</p>
-        <p class="quote">Make sure to have set up your project before starting.</p>
-        <h2 class="headertools">1. First things first test if you have it imported correctly.</h2></br>
-        <span class="codeblock"><span style="color: rgb(173, 106, 207);">Import</span> <span style="color: rgb(68, 186, 225);">Tools.py</span></span><br/>
-        <p class="pr1">Then try the test command</p>
-        <span class="codeblock">tools.test()</span><br/>
-        <p class="pr1">Your result should look like this:</p>
-        <span class="codeblock">Hello world!</span><br/>
-        <br/>
-        <h2 class="headertools">Modules and stuff:</h2>
-        <p class="blue">Randomtools:</p>
-        <p class="blue"><span class="codeblock">randfromlist(list)</span> Takes a random thing from a list</p>
-        <p class="blue"><span class="codeblock">randfromcharstr(string)</span>Takes a random charecter from a string!</p>
-        <p class="red">Math:</p>
-        <p class="red"><span class="codeblock">tobin(Number)</span>Turns into binary</p>
-        <p class="red"><span class="codeblock">frombin(Number)</span>Turns from binary</p>
-        <p class="red"><span class="codeblock">avg(list)</span>Returns a avg from a list</p>
-        <p class="red"><span class="codeblock">percent(first,second)</span>Returns a list of both values into percents [66%,33%]</p>
-        <p class="red">Math.Geometry:</p>
-        <p class="red"><span class="codeblock">Circle(radius)</span>Gets the area of a circle</p>
-        <p class="red"><span class="codeblock">Triangle(height, base)</span>Gets the area of a Triangle</p>
-        <p class="red"><span class="codeblock">Square(X,Y)</span>Gets the area of a Square</p>
-        <p class="purple">Inp:</p>
-        <p class="purple"><span class="codeblock">Intinput(prompt,failprompt)</span>Gets the area of a Triangle</p>
-        <p class="purple"><span class="codeblock">MassCompare(list,Value,Function)</span>Compares a list and a value, Returns an array of the compared value and if it was able to compare it. Example [Value,True]</p>
-        <p class="green">StrOp:</p>
-        <p class="green"><span class="codeblock">letterindex(letter)</span>Gets the index of a letter</p>
-        <p class="green"><span class="codeblock">indextoletter(index)</span>Get a letter from an index</p>
-        <p class="green"><span class="codeblock">reverse(string)</span>reverse a string.</p>
-        <p class="green"><span class="codeblock">getwords(string)</span>Gets words from string</p>
-        <p class="green"><span class="codeblock">reversewords(string)</span>reverses the words in a string.</p>
-        <p class="green"><span class="codeblock">ShiftEncode(string,shift)</span>shifts the letters of the alphabet to make a cypher</p>
-        <p class="green"><span class="codeblock">ShiftDecode(string,shift)</span>Shifts it back to make it senseable</p>
+    <body onload="lod()">
+        <h1 class="navbar">
+            <span class="title" onclick="window.location ='index.html'">Tools.py</span>
+            <button class="buttondocs" onclick="window.location='Documentation.html'">Documentation</button>
+            <button class="buttondocs"  onclick="window.location='guidelines.html'">Guidelines</button>
+            <button class="buttondocs" onclick="window.location='https://github.com/BluCatNight/tools.py'">Github</button>
+        </h1>    
+        <div class="content">
+            <p class="pr1">Hello! Welcome to the offical Documentation for Tools.py.</p>
+            <p class="pr1">Here we have the offical guide.</p>
+            <p class="quote">Make sure to have set up your project before starting.</p>
+            <br/>
+            <h2 class="headertools">1. First things first test if you have it imported correctly.</h2></br>
+            <span class="codeblock"><span style="color: rgb(173, 106, 207);">Import</span> <span style="color: rgb(68, 186, 225);">Tools.py</span></span><br/>
+            <p class="pr1">Then try the test command</p>
+            <span class="codeblock">tools.test()</span><br/>
+            <p class="pr1">Your result should look like this:</p>
+            <span class="codeblock">Hello world!</span><br/>
+            <br/>
+            <h2 class="headertools">Modules and stuff:</h2><br/>
+            <button type="button" class="collapsible">Randomtools:</button>
+            <div class="collcont">
+                <p class="blue"><span class="codeblock">randfromlist(list)</span> Takes a random thing from a list</p>
+                <p class="blue"><span class="codeblock">randfromcharstr(string)</span>Takes a random charecter from a string!</p>
+            </div>
+            <p class="blue"></p>
+            <button type="button" class="collapsible">Math:</button>
+            <div class="collcont"> 
+                <p class="red"><span class="codeblock">tobin(Number)</span>Turns into binary</p>
+                <p class="red"><span class="codeblock">frombin(Number)</span>Turns from binary</p>
+                <p class="red"><span class="codeblock">avg(list)</span>Returns a avg from a list</p>
+                <p class="red"><span class="codeblock">percent(first,second)</span>Returns a list of both values into percents [66%,33%]</p>
+                <button type="button" class="collapsible">Math.Geometry:</button>
+                <div class="collcont"> 
+                    <p class="red"><span class="codeblock">Circle(radius)</span>Gets the area of a circle</p>
+                    <p class="red"><span class="codeblock">Triangle(height, base)</span>Gets the area of a Triangle</p>
+                    <p class="red"><span class="codeblock">Square(X,Y)</span>Gets the area of a Square</p>
+                </div>
+            </div><br/>
+            <button type="button" class="collapsible">Inp:</button>
+            <div class="collcont">
+                <p class="purple"><span class="codeblock">Intinput(prompt,failprompt)</span>Intedger input and only integer input</p>
+                <p class="purple"><span class="codeblock">MassCompare(list,Value,Function)</span>Compares a list and a value, Returns an array of the compared value and if it was able to compare it. Example [Value,True]</p>
+            </div><br/>
+            <!-- <button type="button" class="collapsible">Math.Geometry:</button>
+            <div class="collcont">
+                 
+            </div> -->
+            <button type="button" class="collapsible">StrOp:</button>
+            <div class="collcont">
+                <p class="green"><span class="codeblock">letterindex(letter)</span>Gets the index of a letter</p>
+                <p class="green"><span class="codeblock">indextoletter(index)</span>Get a letter from an index</p>
+                <p class="green"><span class="codeblock">reverse(string)</span>reverse a string.</p>
+                <p class="green"><span class="codeblock">getwords(string)</span>Gets words from string</p>
+                <p class="green"><span class="codeblock">reversewords(string)</span>reverses the words in a string.</p>
+                <p class="green"><span class="codeblock">ShiftEncode(string,shift)</span>shifts the letters of the alphabet to make a cypher</p>
+                <p class="green"><span class="codeblock">ShiftDecode(string,shift)</span>Shifts it back to make it senseable</p>  
+            </div><br/>
+            
+        </div>
     </body>
 
 </html>

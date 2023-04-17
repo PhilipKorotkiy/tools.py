@@ -1,0 +1,47 @@
+
+:root {
+    --blue: #1e90ff;
+    --black: #211329;
+    --black-L: #210b2e;
+    --tactic-orange: rgb(255, 172, 19);
+    --transparent: rgba(0,0,0,0);
+    --secondary-background: #052749;
+}
+
+.collapsible {
+    transition: background-color 0.5s;
+    transition: border-radius 1s;
+    transition: font-size 1s;
+    display: inline;
+    text-align: center;
+    font-family: monospace;
+    color: var(--tactic-orange);
+    text-align: center;
+    background-color: var(--transparent);
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+    outline: none;
+    border-style: solid;
+}
+
+
+  .active, .collapsible:hover {
+    font-family: monospace;
+    color: var(--tactic-orange);
+    text-align: center;
+    background-color: var(--black);
+    font-size: large;
+    border-radius: 7px;
+    padding: 10px;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .collcont {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: var(--black);
+    border-radius: 5px;
+  }
